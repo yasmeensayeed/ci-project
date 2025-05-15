@@ -1,0 +1,81 @@
+Final Report: Hybrid Clustering Using GA and PSO
+Project Title
+Hybrid Clustering Approach using Genetic Algorithm (GA) and Particle Swarm Optimization (PSO)
+
+- Team Leader
+Ziad Hany
+
+- Team Members
+[ Ziad Hasan - Ziad AbdelAlem - Mazen Mohammed - Yasmin Elsaid - Tasnim Taha ]
+
+
+University
+Helwan University
+Faculty of Computer Science and Artificial Intelligence
+
+1. Introduction
+Clustering is an important technique in data mining and machine learning that helps group similar data points. In this project, we implemented and compared different clustering algorithms including K-Means, Genetic Algorithm (GA), Particle Swarm Optimization (PSO), and a Hybrid GA + PSO method.
+
+The main goal was to improve clustering results by combining GA and PSO into a single hybrid algorithm and testing it on real datasets.
+
+2. Problem Statement
+Traditional clustering algorithms like K-Means are fast but often get stuck in local optima. Metaheuristic algorithms like GA and PSO can overcome this by searching better solutions. However, each algorithm has its own limitations. By combining GA and PSO, we aimed to benefit from both.
+
+3. Objectives
+Implement K-Means, GA, PSO, and a hybrid GA + PSO.
+
+Evaluate their performance using clustering metrics.
+
+Create a GUI that allows users to choose an algorithm and visualize the results.
+
+4. Tools and Technologies
+Programming Language: Python
+
+Libraries: Scikit-learn, NumPy, Matplotlib, Streamlit
+
+Dataset: Iris dataset and custom datasets
+
+IDE: Visual Studio Code
+
+5. System Design
+1. Data Preprocessing
+Handled missing values and normalized features for better accuracy.
+
+2. Algorithm Implementation
+K-Means using scikit-learn
+
+GA and PSO from scratch using NumPy
+
+Hybrid approach: used GA for exploration and PSO for exploitation.
+
+3. Evaluation Metrics
+Silhouette Score: Used to measure the quality of clustering.
+
+4. GUI
+Developed a simple user interface using Streamlit to test all algorithms.
+
+Users can upload datasets and choose the algorithm.
+
+6. Results and Analysis
+K-Means: Fast but sometimes stuck in local optima.
+
+GA: More stable but slower.
+
+PSO: Balanced results, better than K-Means in some cases.
+
+Hybrid (GA + PSO): Achieved the best fitness score and clustering quality.
+
+The best silhouette score reached was 0.8467 with the Hybrid algorithm.
+
+7. Challenges
+Handling silhouette errors when all points belong to one cluster.
+
+Long run-time for genetic operations.
+
+Combining GA and PSO without performance loss.
+
+GUI integration and avoiding value errors for missing attributes.
+
+8. Conclusion
+We successfully implemented and tested four clustering techniques. The hybrid GA + PSO method provided the best results in most cases. The GUI makes it easy for users to interact with the models and understand their performance.
+
